@@ -4,78 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>LICZODLE</title>
 </head>
-<body>
-    <h1> LICZODLE</h1>
-     <div class="row">
-        <div class="letter"></div>
-        <div class="letter"></div> 
-        <div class="letter"></div>
-        <div class="letter"></div>
-        <div class="letter"></div>
-        <div class="letter"></div>
+<body>  
+    <div id="zasady">
+        <h2>Zasady</h2>
+       <p>
+        Aby rozpocząć należy wpisać kod 5 cyfr i nacisnąć przycisk Enter by 
+        sprawdzić czy podane liczby są w haśle zmieniając kolor na jeden 
+        z trzech zielony, żółty i czerwony
+       </p>
+       <dl>
+        <dt>
+        Kolor zielony oznacza, że podana cyfra jest w haśle w tej pozycji
+        </dt>
+        <dt>
+        Kolor żółta oznacza, że podana cyfra jest w haśle w innej pozycji.
+        </dt>
+        <dt>
+        Kolor czerwona oznacza, że podanej cyfry niema w haśle. 
+        </dt>
+       </dl>
+        <p>
+        Przycisk z minusem służy do usuwaniami ostatniej podanej 
+        liczby w danym rzędzie. 
+        </p>
+    </div>
+    <h1> LICZODLE</h1> 
+  
+    <div class="row">
+        <div class="letter" id="l1"></div>
+        <div class="letter" id="l2"></div> 
+        <div class="letter" id="l3"></div>
+        <div class="letter" id="l4"></div>
+        <div class="letter" id="l5"></div>
+
     </div>
     <div class="row">
-        <div class="letter"></div>
-        <div class="letter"></div> 
-        <div class="letter"></div>
-        <div class="letter"></div>
-        <div class="letter"></div>
-        <div class="letter"></div>
+        <div class="letter" id="l7"></div>
+        <div class="letter" id="l8"></div> 
+        <div class="letter" id="l9"></div>
+        <div class="letter" id="l10"></div>
+        <div class="letter" id="l11"></div>
+
     </div>
     <div class="row">
-        <div class="letter"></div>
-        <div class="letter"></div> 
-        <div class="letter"></div>
-        <div class="letter"></div>
-        <div class="letter"></div>
-        <div class="letter"></div>
+        <div class="letter" id="l13"></div>
+        <div class="letter" id="l14"></div> 
+        <div class="letter" id="l15"></div>
+        <div class="letter" id="l16"></div>
+        <div class="letter" id="l17"></div>
+
     </div>
     <div class="row">
-        <div class="letter"></div>
-        <div class="letter"></div> 
-        <div class="letter"></div>
-        <div class="letter"></div>
-        <div class="letter"></div>
-        <div class="letter"></div>
+        <div class="letter" id="l19"></div>
+        <div class="letter" id="l20"></div> 
+        <div class="letter" id="l21"></div>
+        <div class="letter" id="l22"></div>
+        <div class="letter" id="l23"></div>
+
     </div>
     <div class="row">
-        <div class="letter"></div>
-        <div class="letter"></div> 
-        <div class="letter"></div>
-        <div class="letter"></div>
-        <div class="letter"></div>
-        <div class="letter"></div>
+        <div class="letter" id="l25"></div>
+        <div class="letter" id="l26"></div> 
+        <div class="letter" id="l27"></div>
+        <div class="letter" id="l28"></div>
+        <div class="letter" id="l29"></div>
+
     </div>
         <div class="pin">
 
-            <button class="button" id="1">1</button>
+            <button class="button" onclick="kliknijnumer(1)" id="1">1</button>
 
-            <button class="button" id="2">2</button>
+            <button class="button" onclick="kliknijnumer(2)" id="2">2</button>
 
-            <button class="button" id="3">3</button>
+            <button class="button" onclick="kliknijnumer(3)" id="3">3</button>
         </div>
         <div class="pin">
-            <button class="button" id="4">4</button>
+            <button class="button" onclick="kliknijnumer(4)" id="4">4</button>
 
-            <button class="button" id="5">5</button>
+            <button class="button" onclick="kliknijnumer(5)()" id="5">5</button>
 
-            <button class="button" id="6">6</button>
+            <button class="button" onclick="kliknijnumer(6)" id="6">6</button>
         </div>
         <div class="pin">
-            <button class="button" id="7">7</button>
+            <button class="button" onclick="kliknijnumer(7)" id="7">7</button>
 
-            <button class="button" id="8">8</button>
+            <button class="button" onclick="kliknijnumer(8)" id="8">8</button>
 
-            <button class="button" id="9">9</button>
+            <button class="button" onclick="kliknijnumer(9)" id="9">9</button>
         </div>
         <div class="pin">
-            <button class="button" id="opd">ENTER</button>
+            <button class="button" onclick="klient()" id="opd">ENTER</button>
 
-            <button class="button" id="0">0</button>
+            <button class="button" onclick="kliknijnumer(0)" id="0">0</button>
 
-            <button class="button"  id="US">-</button>
+            <button class="button" onclick="klius()"  id="US">-</button>
         </div>
+  
 </body>
 </html>

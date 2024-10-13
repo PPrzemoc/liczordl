@@ -1,9 +1,20 @@
-h1{
+h1
+{
 text-align: center;
 font-size: 100px;
 color: #7CF5FF;
+margin: 0;
 }
-body{
+h2
+{
+    text-align: center;
+    font-size: 40px;
+    color: #7CF5FF;
+    margin: 0;
+
+}
+body
+{
     background-color: #6439FF;
     color: #00CCDD;
 }
@@ -24,7 +35,7 @@ body{
 {
     text-align:center;
     border: 2px solid #00CCDD;
-    font-size: 90%;
+    font-size: 250%;
     margin-left: 3px;
     margin-right: 3px;
     margin-bottom: 5px;
@@ -39,7 +50,7 @@ body{
 {
     text-align:center;
     border: 2px solid #00CCDD;
-    font-size: 90%;
+    font-size: 250%;
     margin-left: 3px;
     margin-right: 3px;
     margin-bottom: 5px;
@@ -54,7 +65,7 @@ body{
 {
     text-align:center;
     border: 2px solid #00CCDD;
-    font-size: 90%;
+    font-size: 250%;
     margin-left: 3px;
     margin-right: 3px;
     margin-bottom: 5px;
@@ -69,7 +80,7 @@ body{
 {
     text-align:center;
     border: 2px solid #00CCDD;
-    font-size: 90%;
+    font-size: 250%;
     margin-left: 3px;
     margin-right: 3px;
     margin-bottom: 5px;
@@ -78,7 +89,7 @@ body{
     min-width: 50px;
     border-radius: 2%;
     color: #7CF5FF;
-    background-color: whitesmoke;
+    background-color: yellow;
 }
 .pin
 {
@@ -96,9 +107,22 @@ body{
     margin-right: 3px;
     margin-bottom: 5px;
     margin-top: 5px;
-    min-height: 32px;
-    min-width: 32px;
+    min-height: 30px;
+    min-width:30px;
     border-radius: 2%;
     color: #7CF5FF;
     background-color: #4F75FF;
+}
+#zasady
+{
+   
+    border: 2px solid #00CCDD;
+    font-size: 90%;
+    width: 20%;
+    border-radius: 2%;
+    color: #7CF5FF;
+    background-color: #4F75FF; 
+    position: absolute;
+    top: 8%;
+    left: 78%;
 }
