@@ -1,32 +1,34 @@
-var kod= new Set();
-var now=1;
-while (kod.size < 5) {
-    kod.add(Math.floor(Math.random() * 10));
+var kodpowstaly= new Set();
+var now=1; 
+let kodpodany=[];
+while (kodpowstaly.size < 5) {
+    kodpowstaly.add(Math.floor(Math.random() * 10));
 }
+var kod=Array.from(kodpowstaly);
+
 console.log(kod);
 function kliknijnumer(numer) {
     if (now != 6 && now != 12 && now != 18 && now != 24 && now != 230) {
-        document.getElementById("l" + now).innerHTML = numer;
+        let wczytobrazek= "grafika/liczba"+numer+".jpg";
+        document.getElementById("l" + now).innerHTML = '<img src='+'"'+wczytobrazek+'"'+' width="50" height="50">';
+        kodpodany.push(numer);
         now++;
     }
 }
 
+
+
 function klius()
 {
-    if(now!=6&&now!=12&&now!=18&&now!=24&&now!=230)
- {   document.getElementById("l"+(now-1)).innerHTML=" ";
-    now--;}
+    document.getElementById("l"+(now-1)).innerHTML=" ";
+    now--;
+    kodpodany.pop();
 }
 function spr(sprawdzanie)
 {
-    let kodpodany=[];
+   
     let licznik=0;
-    for(let i=0;i<5;i++)
-        {
-            let  div = document.getElementById("l"+(i+sprawdzanie+1));
-            console.log(div);
-            kodpodany[i]=div.textContent;
-        }
+    console.log(sprawdzanie);
         for(let i =0;i<5;i++)
         {
             let  div = document.getElementById("l"+(i+sprawdzanie+1));
@@ -51,12 +53,36 @@ function spr(sprawdzanie)
         }
         if(licznik==5)
             {
+                setTimeout(()=>{
                 alert("Gratulacje zgadłeś");
                 alert("Wczytawanie kolejnej gry");
-                location.reload();
+                location.reload();},1000)
             }
+        else if(now==30)
+            {
+            alert("Przegrałeś. Kod to "+ kod[0]+" "+ kod[1]+" "+ kod[2]+" "+ kod[3]+" "+ kod[4]);
+            alert("Wczytawanie kolejnej gry");
+            location.reload();}
+            
+            kodpodany.length = 0;
+         console.log(kodpodany);   
          now++;
+        
 }
+document.addEventListener('keydown', function(event) {
+
+    if (event.key === '1' || event.key === '2' || event.key === '3' || event.key === '4' ||
+        event.key === '5' || event.key === '6' || event.key === '7' || event.key === '8' ||
+        event.key === '9' || event.key === '0') {
+            kliknijnumer(event.key);
+    }
+    if (event.keyCode === 8) {
+        klius();
+    }
+    if (event.key === 'Enter') {
+        klient();
+    }
+});
 function klient()
 {    
 switch(now){
