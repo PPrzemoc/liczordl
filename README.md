@@ -1,93 +1,16 @@
-var kodpowstaly= new Set();
-var now=1; 
-let kodpodany=[];
-while (kodpowstaly.size < 5) {
-    kodpowstaly.add(Math.floor(Math.random() * 10));
-}
-var kod=Array.from(kodpowstaly);
-
-console.log(kod);
-function kliknijnumer(numer) {
-    if (now != 6 && now != 12 && now != 18 && now != 24 && now != 230) {
-        let wczytobrazek= "grafika/liczba"+numer+".jpg";
-        document.getElementById("l" + now).innerHTML = '<img src='+'"'+wczytobrazek+'"'+' width="50" height="50">';
-        kodpodany.push(numer);
-        now++;
-    }
-}
-
-
-
-function klius()
-{
-    document.getElementById("l"+(now-1)).innerHTML=" ";
-    now--;
-    kodpodany.pop();
-}
-function spr(sprawdzanie)
-{
-   
-    let licznik=0;
-    console.log(sprawdzanie);
-        for(let i =0;i<5;i++)
-        {
-            let  div = document.getElementById("l"+(i+sprawdzanie+1));
-            if(kod[i]==kodpodany[i])
-            {
-                div.className='letter_good';
-                licznik++;
-            }
-            else
-            {
-                
-                for (let p = 0; p < 5; p++) {
-                        if(kod[p]==kodpodany[i])
-                        { 
-                            div.className='letter_elsewhere';
-                            break;
-                        }       
-                        else if(p==4)
-                        {
-                            div.className='letter_bad'; 
-                        }}}
-        }
-        if(licznik==5)
-            {
-                alert("Gratulacje zgadłeś");
-                alert("Wczytawanie kolejnej gry");
-                location.reload();
-            }
-            kodpodany.length = 0;
-         console.log(kodpodany);   
-         now++;
-}
-document.addEventListener('keydown', function(event) {
-
-    if (event.key === '1' || event.key === '2' || event.key === '3' || event.key === '4' ||
-        event.key === '5' || event.key === '6' || event.key === '7' || event.key === '8' ||
-        event.key === '9' || event.key === '0') {
-            kliknijnumer(event.key);
-    }
-    if (event.keyCode === 8) {
-        klius();
-    }
-    if (event.key === 'Enter') {
-        klient();
-    }
-});
-function klient()
-{    
-switch(now){
-    case 6:
-    spr(0);break;
-    case 12:
-        spr(6);break; 
-    case 18:
-        spr(12);break;
-    case 24:
-        spr(18);
-        break;
-    case 30:
-     spr(24);
-     break;
-    }}
+Cel
+Zgadnięcie przez użytkownika kodu 5 znaków.
+Zasady
+Program losuje 5 niepowtarzających się liczb z przedziału od 0 do 9. Zadaniem użytkownika jest zgadnięcie ciągu liczb przez 
+wpisywanie liczby do okienek po przez przyciski. Po wysłaniu hasła program sprawdza poprawność pozycji cyfr w kodzie zaznaczając
+je odpowiednim kolorem zielony (poprawna pozycja), żółty (jest w haśle, lecz w innej pozycji), czerwone (niema). Na zgadnięcie użytkownik ma 5 prób.
+Mechanika
+Klikanie dwunastu przycisków, 10 z cyframi, jeden z minusem do usuwanie i ostań z napisem Enter do wysłania hasła 
+Cel
+Zgadnięcie przez użytkownika kodu 5 znaków.
+Zasady
+Program losuje 5 niepowtarzających się liczb z przedziału od 0 do 9. Zadaniem użytkownika jest zgadnięcie ciągu liczb przez 
+wpisywanie liczby do okienek po przez przyciski. Po wysłaniu hasła program sprawdza poprawność pozycji cyfr w kodzie zaznaczając
+je odpowiednim kolorem zielony (poprawna pozycja), żółty (jest w haśle, lecz w innej pozycji), czerwone (niema). Na zgadnięcie użytkownik ma 5 prób.
+Mechanika
+Klikanie dwunastu przycisków, 10 z cyframi, jeden z minusem do usuwanie i ostań z napisem Enter do wysłania hasła 
