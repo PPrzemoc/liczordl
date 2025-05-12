@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="grafika/liczba1.jpg">
-    <script src="script.js"></script>
+    <script src="script.js">
+    </script>
     <title>LICZODLE</title>
 </head>
-<body>  
+<body onload="onload()">  
+    <div id="wygrane">0</div>
     <div id="zasady">
         <h2>Zasady</h2>
         <p>
@@ -34,8 +36,8 @@
         </div>
         
     <h1> LICZODLE</h1> 
-  
-    <div class="row">
+    <div id="haslo">
+       <div class="row">
         <div class="letter" id="l1"></div>
         <div class="letter" id="l2"></div> 
         <div class="letter" id="l3"></div>
@@ -74,7 +76,9 @@
         <div class="letter" id="l28"></div>
         <div class="letter" id="l29"></div>
 
+    </div> 
     </div>
+    
         <div class="pin">
 
             <button class="button" style="background-image: url(grafika/liczba1.jpg);" onclick="kliknijnumer(1)" id="1"> </button>

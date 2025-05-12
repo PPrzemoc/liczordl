@@ -1,128 +1,114 @@
-h1
-{
-text-align: center;
-font-size: 100px;
-color: #7CF5FF;
-margin: 0;
-}
-h2
-{
+
+h1, h2 {
     text-align: center;
-    font-size: 40px;
     color: #7CF5FF;
     margin: 0;
+}
 
+h1 {
+    font-size: 100px;
 }
-body
-{
-    background-color: #6439FF;
+
+h2 {
+    font-size: 40px;
+}
+
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
     color: #00CCDD;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#text
-{
+
+#text {
     font-size: 50px;
     text-align: center;
 }
 
-    
-.row
-{
+.row {
     display: flex;
     justify-content: center;
-
+    color: whitesmoke;
 }
-.letter
-{
-    text-align:center;
+
+.letter,
+.letter_good,
+.letter_bad,
+.letter_elsewhere {
+    text-align: center;
+    font-size: 250%;
+    height: 50px;
+    width: 50px;
+    margin: 5px 3px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.letter {
     border: 2px solid #00CCDD;
-    font-size: 250%;
-    margin-left: 3px;
-    margin-right: 3px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    height: 50px;
-    width: 50px;
-    border-radius: 2%;
-    color: #7CF5FF;
     background-color: whitesmoke;
+    color: #333;
 }
-.letter_good
-{
-    text-align:center;
-    border: 3px solid green;
-    font-size: 250%;
-    margin-left: 3px;
-    margin-right: 3px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    height: 50px;
-    width: 50px;
-    border-radius: 2%;
-    color: #7CF5FF;
-}
-.letter_bad
-{
-    text-align:center;
-    border: 3px solid red;
-    font-size: 250%;
-    margin-left: 3px;
-    margin-right: 3px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    height: 50px;
-    width: 50px;
-    border-radius: 2%;
-    color: #7CF5FF;
 
+.letter_good {
+    border: 3px solid green;
+    background-color: #e0ffe0;
 }
-.letter_elsewhere
-{
-    text-align:center;
+
+.letter_bad {
+    border: 3px solid red;
+    background-color: #ffe0e0;
+}
+
+.letter_elsewhere {
     border: 3px solid yellow;
-    font-size: 250%;
-    margin-left: 3px;
-    margin-right: 3px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    height: 50px;
-    width: 50px;
-    border-radius: 2%;
-    color: #7CF5FF;
-   
+    background-color: #ffffe0;
 }
-.pin
-{
+
+.pin {
     display: flex;
     justify-content: center;
-
 }
 
-.button
-{
-    text-align:center;
-    border: 0.4px solid #00CCDD;
-    font-size: 90%;
-    margin-left: 3px;
-    margin-right: 3px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    min-height: 30px;
-    min-width:30px;
-    border-radius: 2%;
-    color: #7CF5FF;
-    background-color: #4F75FF;
+.button {
+    background-color: #00CCDD;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 10px;
+    margin: 2px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
-#zasady
-{
-   
+
+.button:hover {
+    background-color: #009BAA;
+    transform: scale(1.05);
+}
+
+#zasady {
     border: 2px solid #00CCDD;
     font-size: 90%;
     width: 20%;
-    border-radius: 2%;
+    border-radius: 10px;
     color: #7CF5FF;
-    background-color: #4F75FF; 
-    position:fixed;
+    background-color: #4F75FF;
+    position: fixed;
     top: 8%;
-    left: 78%;
+    right: 2%;
     padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#wygrane {
+    position: fixed;
+    left: 2%;
+    top: 8%;
+    font-size: 200%;
+    font-weight: bold;
 }
