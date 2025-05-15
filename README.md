@@ -16,7 +16,9 @@ Mechanika
 Klikanie dwunastu przycisków, 10 z cyframi, jeden z minusem do usuwanie i ostań z napisem Enter do wysłania hasła 
 
 Jak Odpalić
+
 1.Pobrać pliki.
+
 2.Odpalić plik index.html
 
 Licencja
