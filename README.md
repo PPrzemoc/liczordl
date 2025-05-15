@@ -17,4 +17,4 @@ Klikanie dwunastu przycisków, 10 z cyframi, jeden z minusem do usuwanie i osta�
 
 Licencja
 
-Ten projekt jest objęty licencją MIT. Zobacz plik [LICENSE](./LICENSE) po szczegóły.
+Ten projekt jest objęty licencją MIT. Zobacz plik [LICENSE](./LICENSE.txt) po szczegóły.
