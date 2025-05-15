@@ -14,3 +14,7 @@ wpisywanie liczby do okienek po przez przyciski. Po wysłaniu hasła program spr
 je odpowiednim kolorem zielony (poprawna pozycja), żółty (jest w haśle, lecz w innej pozycji), czerwone (niema). Na zgadnięcie użytkownik ma 5 prób.
 Mechanika
 Klikanie dwunastu przycisków, 10 z cyframi, jeden z minusem do usuwanie i ostań z napisem Enter do wysłania hasła 
+
+Licencja
+
+Ten projekt jest objęty licencją MIT. Zobacz plik [LICENSE](./LICENSE) po szczegóły.
