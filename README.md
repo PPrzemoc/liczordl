@@ -15,6 +15,10 @@ je odpowiednim kolorem zielony (poprawna pozycja), żółty (jest w haśle, lecz
 Mechanika
 Klikanie dwunastu przycisków, 10 z cyframi, jeden z minusem do usuwanie i ostań z napisem Enter do wysłania hasła 
 
+Jak Odpalić
+1.Pobrać pliki.
+2.Odpalić plik index.html
+
 Licencja
 
 Ten projekt jest objęty licencją MIT. Zobacz plik [LICENSE](./LICENSE.txt) po szczegóły.
